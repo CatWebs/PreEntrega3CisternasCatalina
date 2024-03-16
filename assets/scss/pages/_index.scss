@@ -1,0 +1,36 @@
+.main__index{
+    .card{
+        width: 400px;
+        border: 1px solid red;
+        padding: 20px;
+        div{
+            text-align: justify;
+            img{
+                width: 80%;
+            }
+            button{
+                background-color: map-get($colores, color-fondo);
+                padding: 10px 30px;
+                border: 3px solid map-get($colores, color-sombreado);
+                color: map-get($colores, color-texto-secundario);
+                &:hover{
+                    background-color: map-get($colores, color-secundario);
+                    cursor: pointer;
+                }
+            }
+        }
+    } 
+}
+
+#cajas{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    div{
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+    }
+}
