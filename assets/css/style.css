@@ -10,34 +10,6 @@ body {
   min-width: 320px;
 }
 
-.about__img .about_img_1 {
-  background-image: url(../../../media/img/gato1.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.about__img .about_img_2 {
-  background-image: url(../../../media/img/gato2.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.about__img .about_img_3 {
-  background-image: url(../../../media/img/gato3.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.about__img .about_img_4 {
-  background-image: url(../../../media/img/gato4.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 header {
   background-color: #87ceeb;
   height: 70px;
@@ -108,43 +80,57 @@ header .dropdown .dropdown-menu li a:hover {
     display: none;
   }
 }
-.main__index .card {
-  width: 400px;
-  border: 1px solid red;
-  padding: 20px;
+#main__about {
+  background-color: #ffc0cb;
+  color: #000;
+  padding: 40px 20px;
+  border-top: 3px solid #0c0909;
+  text-align: center;
 }
-.main__index .card div {
+#main__about h1 {
+  text-shadow: 3px 4px 7px #000;
+}
+#main__about .about__section {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+#main__about .about__section .about__text {
+  color: #000;
+  padding: 15px;
   text-align: justify;
 }
-.main__index .card div img {
-  width: 80%;
+#main__about .about__section .about__text h3 {
+  border-bottom: 2px solid #ffc0cb;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  text-align: center;
 }
-.main__index .card div button {
-  background-color: #0c0909;
-  padding: 10px 30px;
-  border: 3px solid;
+#main__about .about__section .about__text p span {
+  color: #ffc0cb;
 }
-.main__index .card div button:hover {
-  background-color: #6a5acd;
-  cursor: pointer;
+#main__about .about__section .about__text p a {
+  text-decoration: none;
+  color: #ffc0cb;
 }
-
-#cajas {
-  display: grid;
-  grid-template-columns: repeat(3, 150px);
+#main__about .about__section .about__text p a:hover {
+  color: #6a5acd;
 }
-#cajas div {
-  width: 150px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
+#main__about .about__section .about__img__container {
+  padding: 20px;
+  margin: auto;
+  border-radius: 15px;
+}
+#main__about .about__section .about__img__container img {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 #contact {
   background-color: #0c0909;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 #contact .mail__container {
   margin: 0 auto;
@@ -279,54 +265,6 @@ footer .rrss a i:hover {
   footer .rrss a i {
     padding: 10px 0;
   }
-}
-#main__about {
-  background-color: #fff;
-  color: #000;
-  padding: 70px 20px;
-}
-#main__about h1 {
-  background-color: red;
-}
-#main__about h2 {
-  background-color: green;
-}
-
-.about__section {
-  border-radius: 15px;
-  border: 1px solid #000;
-  margin: 20px;
-}
-.about__section .about__text {
-  color: #000;
-  padding: 15px;
-  text-align: justify;
-}
-.about__section .about__text h3 {
-  border-bottom: 2px solid #ffc0cb;
-  padding-bottom: 15px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-.about__section .about__text p span {
-  color: #ffc0cb;
-}
-.about__section .about__text p a {
-  text-decoration: none;
-  color: #ffc0cb;
-}
-.about__section .about__text p a:hover {
-  color: #6a5acd;
-}
-.about__section .about__img {
-  padding: 25px;
-  background-color: yellow;
-}
-.about__section .about__img .about_img {
-  border: 1px solid #000;
-  border-radius: 15px;
-  min-height: 100px;
-  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

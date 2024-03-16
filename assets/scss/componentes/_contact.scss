@@ -1,6 +1,6 @@
 #contact{
     background-color: map-get($colores, color-fondo);
-    padding: 20px 0;
+    padding: 40px 0;
     .mail__container{
         margin: 0 auto;
         @include basic_flex (flex, space-between, center, row); 

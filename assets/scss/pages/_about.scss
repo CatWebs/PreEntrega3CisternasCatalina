@@ -1,18 +1,18 @@
 #main__about{
-    background-color: $background-basic;
+    background-color: map-get($colores, color-rosa);
     color: map-get($colores, color-texto-dark);
-    padding: 70px 20px;
+    padding: 40px 20px;
+    border-top: 3px solid map-get($colores, color-fondo);
+    text-align: center;
     h1{
-        background-color: red;
-    }
-    h2{
-        background-color: green;
-    }
+        text-shadow: 3px 4px 7px map-get($colores, color-texto-dark);
     }
     .about__section{
+        background-color: $background-basic;
         border-radius: 15px;
         border: 1px solid map-get($colores, color-texto-dark);
-        margin: 20px;
+        margin: 20px auto;
+        max-width: 1200px;
         .about__text{
             color: map-get($colores, color-texto-dark);
             padding: 15px;
@@ -36,14 +36,14 @@
                 }
             }
         }
-        .about__img{
-            padding: 25px;
-            background-color: yellow;
-            .about_img{
-                border: 1px solid map-get($colores, color-texto-dark);
-                border-radius: 15px;
-                min-height: 100px;
-                height: 100%;
+        .about__img__container{
+           padding:20px;
+           margin: auto;
+           border-radius: 15px;
+           img{
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+           } 
         }
     }
-    }
+}
