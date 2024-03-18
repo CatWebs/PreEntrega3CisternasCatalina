@@ -128,6 +128,67 @@ header .dropdown .dropdown-menu li a:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+#projects {
+  background-color: #0c0909;
+  color: #fff;
+  padding: 40px 20px;
+  border-top: 3px solid #6a5acd;
+  text-align: center;
+  width: 100%;
+}
+#projects h1 {
+  text-shadow: 3px 4px 7px #fff;
+  padding-bottom: 40px;
+}
+#projects .proyectos .proyectos__proyecto {
+  padding: 25px;
+}
+#projects .proyectos .proyectos__proyecto .proyecto__img { /*BOX*/
+  width: 80%;
+  height: 250px;
+  margin: 0 auto;
+  background-color: #ffc0cb;
+  border-radius: 15px;
+  transition: all 1s;
+  box-shadow: #87ceeb 0px 3px 20px;
+  position: relative;
+}
+#projects .proyectos .proyectos__proyecto .proyecto__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+#projects .proyectos .proyectos__proyecto .proyecto__img .proyecto__info { /*HOVER*/
+  background-color: #0c0909;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  transition: 1s all;
+}
+#projects .proyectos .proyectos__proyecto .proyecto__img .proyecto__info h2 {
+  color: #fff;
+  text-shadow: 5px 10px 10px #000;
+  font-size: 22px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+#projects .proyectos .proyectos__proyecto .proyecto__img:hover {
+  cursor: pointer;
+}
+#projects .proyectos .proyectos__proyecto .proyecto__img:hover .proyecto__info {
+  width: 100%;
+}
+
 #contact {
   background-color: #0c0909;
   padding: 40px 0;

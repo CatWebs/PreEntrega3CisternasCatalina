@@ -1,0 +1,59 @@
+#projects{
+    background-color: map-get($colores, color-fondo);
+    color: map-get($colores, color-texto-light);
+    padding: 40px 20px;
+    border-top: 3px solid map-get($colores, color-secundario);
+    text-align: center;
+    width: 100%;
+    h1{
+        text-shadow: 3px 4px 7px map-get($colores, color-texto-light);
+        padding-bottom: 40px;
+    }
+    .proyectos{
+        .proyectos__proyecto{
+            padding: 25px; 
+            .proyecto__img{  /*BOX*/
+                width: 80%;
+                height: 250px;
+                margin: 0 auto;
+                background-color: map-get($colores, color-rosa);
+                border-radius: 15px;
+                transition: all 1s;
+                box-shadow: map-get($colores, color-principal) 0px 3px 20px;
+                position: relative;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+                .proyecto__info{    /*HOVER*/
+                    background-color: map-get($colores, color-fondo);
+                    opacity: .7;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0%;
+                    border-radius: 15px;
+                    @include basic_flex (flex, center, center, row);
+                    overflow: hidden;
+                    transition: 1s all;
+                    h2{
+                        color: map-get($colores, color-texto-light);
+                        text-shadow: 5px 10px 10px map-get($colores, color-texto-dark);
+                        font-size: 22px;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                    .proyecto__info{
+                        width: 100%;
+                    }
+                }  
+            }  
+        }
+    }
+}
