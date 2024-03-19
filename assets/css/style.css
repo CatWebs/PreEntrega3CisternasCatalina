@@ -212,6 +212,52 @@ header .dropdown .dropdown-menu li a:hover {
   width: 100%;
 }
 
+#main__servicios {
+  background-color: #0c0909;
+  color: #000;
+  padding: 40px 20px;
+  border-top: 3px solid #ffc0cb;
+  text-align: center;
+}
+#main__servicios h1 {
+  text-shadow: 3px 4px 7px #fff;
+  color: #fff;
+}
+#main__servicios h2 {
+  color: #fff;
+}
+#main__servicios .services__section {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+#main__servicios .services__section p {
+  font-size: 18px;
+}
+#main__servicios .services__section .services__text {
+  color: #000;
+  padding: 15px;
+  text-align: justify;
+}
+#main__servicios .services__section .services__text h3 {
+  border-bottom: 2px solid #ffc0cb;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#main__servicios .services__section .services__img__container {
+  padding: 20px;
+  margin: auto;
+  border-radius: 15px;
+}
+#main__servicios .services__section .services__img__container img {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: all 5s;
+}
+
 #contact {
   background-color: #0c0909;
   padding: 40px 0;
