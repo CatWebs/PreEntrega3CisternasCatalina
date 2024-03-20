@@ -10,6 +10,29 @@ body {
   min-width: 320px;
 }
 
+#radio_main .player .player__waves .player6, #radio_main .player .player__waves .player5, #radio_main .player .player__waves .player4, #radio_main .player .player__waves .player3, #radio_main .player .player__waves .player2, #radio_main .player .player__waves .player1 {
+  animation-name: animacion_radio_player;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animacion_radio_player {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 50%;
+  }
+  100% {
+    width: 0%;
+  }
+}
 header {
   background-color: #87ceeb;
   height: 70px;
@@ -80,6 +103,85 @@ header .dropdown .dropdown-menu li a:hover {
     display: none;
   }
 }
+#radio_main {
+  background: linear-gradient(to bottom, #0c0909, #6a5acd, #0c0909);
+  color: #fff;
+  padding: 40px 20px;
+  border-top: 3px solid #fff;
+  text-align: center;
+}
+#radio_main h1 {
+  text-shadow: 3px 4px 7px #000;
+  margin: 20px auto;
+}
+#radio_main .player {
+  background-color: #0c0909;
+  border: 1px solid #6a5acd;
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 15px;
+}
+#radio_main .player .player__waves {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  padding: 12px;
+}
+#radio_main .player .player__waves .player__box {
+  background-color: yellow;
+  justify-self: flex-start;
+  height: 30px;
+  width: 10%;
+  border: 1px solid black;
+}
+#radio_main .player .player__waves .player1 {
+  animation-delay: 0s;
+  animation-duration: 5s;
+  background: linear-gradient(to right, rgb(12, 230, 211), rgb(44, 94, 204), rgb(0, 0, 255), transparent);
+}
+#radio_main .player .player__waves .player2 {
+  animation-delay: 0.5s;
+  animation-duration: 5s;
+  background: linear-gradient(to right, rgb(216, 164, 236), rgb(169, 53, 223), rgb(111, 0, 255), transparent);
+}
+#radio_main .player .player__waves .player3 {
+  animation-delay: 0.7s;
+  animation-duration: 4s;
+  background: linear-gradient(to right, rgb(255, 159, 242), rgb(233, 123, 215), rgb(241, 90, 209), transparent);
+}
+#radio_main .player .player__waves .player4 {
+  animation-delay: 0.3s;
+  animation-duration: 4.5s;
+  background: linear-gradient(to right, rgb(236, 119, 135), rgb(236, 48, 74), rgb(255, 136, 0), transparent);
+}
+#radio_main .player .player__waves .player5 {
+  animation-delay: 0.1s;
+  animation-duration: 4s;
+  background: linear-gradient(to right, rgb(228, 189, 107), rgb(255, 253, 138), rgb(255, 251, 0), transparent);
+}
+#radio_main .player .player__waves .player6 {
+  animation-delay: 0.4s;
+  animation-duration: 5s;
+  background: linear-gradient(to right, rgb(216, 255, 110), rgb(176, 255, 123), rgb(145, 255, 0), transparent);
+}
+#radio_main .player .player__music {
+  color: #000;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+}
+#radio_main .player .player__music .music {
+  width: 100%;
+}
+#radio_main .player .player__music .music audio {
+  width: 90%;
+  margin: auto;
+}
+
 #main__about {
   background-color: #ffc0cb;
   color: #000;
