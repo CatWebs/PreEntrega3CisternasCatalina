@@ -114,6 +114,26 @@ header .dropdown .dropdown-menu li a:hover {
   text-shadow: 3px 4px 7px #000;
   margin: 20px auto;
 }
+#radio_main h2 {
+  font-weight: bolder;
+  margin-top: 30px;
+}
+#radio_main h3 {
+  text-shadow: 3px 4px 7px #87ceeb;
+}
+#radio_main h4 {
+  margin-bottom: 30px;
+  color: #000;
+  text-shadow: 3px 4px 7px #fff;
+}
+#radio_main h4 a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+}
+#radio_main h4 a:hover {
+  color: #ffc0cb;
+}
 #radio_main .player {
   background-color: #0c0909;
   border: 1px solid #6a5acd;
@@ -180,6 +200,13 @@ header .dropdown .dropdown-menu li a:hover {
 #radio_main .player .player__music .music audio {
   width: 90%;
   margin: auto;
+}
+#radio_main .contenido_adicional .btn {
+  background-color: #87ceeb;
+  margin-bottom: 1%;
+}
+#radio_main .contenido_adicional .btn:hover {
+  background-color: #6a5acd;
 }
 
 #main__about {

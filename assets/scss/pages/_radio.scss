@@ -8,6 +8,26 @@
         text-shadow: 3px 4px 7px map-get($colores, color-texto-dark);
         margin: 20px auto;
     }
+    h2{
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    h3{
+        text-shadow: 3px 4px 7px map-get($colores, color-principal);
+    }
+    h4{
+        margin-bottom: 30px;
+        color: map-get($colores, color-texto-dark);
+        text-shadow: 3px 4px 7px map-get($colores, color-texto-light);
+        a{
+            text-decoration: none;
+            color: map-get($colores, color-texto-dark);
+            font-weight: bolder;
+            &:hover{
+                color: map-get($colores, color-rosa);
+            }
+        }
+    }
     .player{
         background-color: map-get($colores, color-fondo);
         border: 1px solid map-get($colores, color-secundario);
@@ -60,6 +80,15 @@
                     width: 90%;
                     margin: auto;
                 }
+            }
+        }
+    }
+    .contenido_adicional{
+        .btn{
+            background-color: map-get($colores, color-principal);
+            margin-bottom: 1%;
+            &:hover{
+                background-color: map-get($colores, color-secundario);
             }
         }
     }
