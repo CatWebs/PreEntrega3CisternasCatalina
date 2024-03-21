@@ -12,15 +12,26 @@
     }
 }
 
-
-@media only screen and (max-width: 1023px) {
-    /*Media query del header*/
-    .nav__menu{
-        visibility: hidden;
-        display: none;
+@media only screen and (max-width:600px){
+    #main_index{
+        .articulos{
+            padding: 20px 5px;
+            h2{
+                font-size: 18px;
+            }
+            .accordion-item{
+                .accordion-header{
+                    .accordion-button{
+                        font-size: 18px;
+                    }
+                }
+                .accordion-collapse{
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }
-
 
 
 @media only screen and (min-width:600px){
@@ -37,6 +48,16 @@
             }
         }
     } 
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+    /*Media query del header*/
+    .nav__menu{
+        visibility: hidden;
+        display: none;
+    }
 }
 
 @media only screen and (min-width:1024px){
