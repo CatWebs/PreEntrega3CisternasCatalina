@@ -91,19 +91,6 @@ header .dropdown .dropdown-menu li a:hover {
   color: #6a5acd;
 }
 
-/*Media querys para el header*/
-@media only screen and (min-width: 1024px) {
-  .dropdown {
-    visibility: hidden;
-    display: none;
-  }
-}
-@media only screen and (max-width: 1023px) {
-  .nav__menu {
-    visibility: hidden;
-    display: none;
-  }
-}
 #radio_main {
   background: linear-gradient(to bottom, #0c0909, #6a5acd, #0c0909);
   color: #fff;
@@ -534,11 +521,20 @@ footer .rrss a i:hover {
 }
 
 @media only screen and (max-width: 420px) {
+  /*Media query del footer*/
   footer .rrss a i {
     padding: 10px 0;
   }
 }
+@media only screen and (max-width: 1023px) {
+  /*Media query del header*/
+  .nav__menu {
+    visibility: hidden;
+    display: none;
+  }
+}
 @media only screen and (min-width: 600px) {
+  /*Media query de galería con Grids*/
   .galeria-paisajes h2 {
     padding: 50px 20px;
   }
@@ -551,6 +547,12 @@ footer .rrss a i:hover {
   }
 }
 @media only screen and (min-width: 1024px) {
+  /*Media query del header*/
+  .dropdown {
+    visibility: hidden;
+    display: none;
+  }
+  /*Media query de galería con Grids*/
   .galeria-paisajes .paisajes-container {
     grid-template-rows: repeat(8, 350px);
     grid-template-columns: repeat(3, 1fr);
@@ -589,6 +591,7 @@ footer .rrss a i:hover {
   }
 }
 @media only screen and (min-width: 1400px) {
+  /*Media query de galería con Grids*/
   .galeria-paisajes h2 {
     padding: 70px 20px;
   }
